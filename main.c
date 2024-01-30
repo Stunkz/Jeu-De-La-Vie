@@ -6,6 +6,8 @@
 #define MAXX 60
 #define MAXY 35
 
+#define WAIT 100000
+
 #define MINVOISIN 2
 #define MAXVOISIN 3
 #define NUMVOISIN 3
@@ -27,7 +29,7 @@ int main(void) {
         printf("Etape : %d\n", i);
         Affichage(map);
         Calcul(map, mapAlt);
-        usleep(100000);
+        usleep(WAIT);
         system("clear");
     }
     
